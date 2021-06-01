@@ -48,6 +48,7 @@ for (var i = 0; i < numberButton.length; i++) {
 // react when click sign
 // divide
 sign[0].addEventListener("click", function () {
+  if(curNumber == "") curNumber = 0;
   switch (curSign) {
     case 0:
       curResult /= parseFloat(curNumber);
@@ -69,6 +70,7 @@ sign[0].addEventListener("click", function () {
 
 // multiple
 sign[1].addEventListener("click", function () {
+  if(curNumber == "") curNumber = 0;
   switch (curSign) {
     case 0:
       curResult /= parseFloat(curNumber);
@@ -90,6 +92,7 @@ sign[1].addEventListener("click", function () {
 
 // minus
 sign[2].addEventListener("click", function () {
+  if(curNumber == "") curNumber = 0;
   switch (curSign) {
     case 0:
       curResult /= parseFloat(curNumber);
@@ -115,6 +118,7 @@ sign[2].addEventListener("click", function () {
 
 // add
 sign[3].addEventListener("click", function () {
+  if(curNumber == "") curNumber = 0;
   switch (curSign) {
     case 0:
       curResult /= parseFloat(curNumber);
@@ -142,6 +146,7 @@ sign[3].addEventListener("click", function () {
 document
   .getElementsByClassName("calc-button-equal")[0]
   .addEventListener("click", function () {
+    if(curNumber == "") curNumber = 0;  
     switch (curSign) {
       case 0:
         curResult /= parseFloat(curNumber);
