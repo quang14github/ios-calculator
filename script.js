@@ -35,8 +35,8 @@ document
 // delete char
 document.getElementsByClassName("calc-button-arrow")[0].addEventListener("click", () => {
   curNumber = curNumber.substr(0, curNumber.length - 1);
-  if (curNumber === "") curNumber = "0";
   resultScreen.innerHTML = curNumber;
+  if (curNumber === "") resultScreen.innerHTML = 0; 
 });
 // read number
 for (var i = 0; i < numberButton.length; i++) {
